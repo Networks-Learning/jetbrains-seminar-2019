@@ -3,11 +3,14 @@
 Here, we perform smart broadcasting with the help of stochastic optimal
 control.
 
-You will need to implement several functions in the file `opt_model.py`.
+You will need to implement some functions in the file `opt_model.py`.
 
-## Requirements
+## Execution
 
-   - decorated_options: `pip install decorated_options`.
+```bash
+   pip install requirements.txt
+   jupyter notebook
+```
 
 ## Code structure
 
@@ -16,6 +19,7 @@ You will need to implement several functions in the file `opt_model.py`.
    - `Hawkes` (bursty posting)
    - `PiecewiseConst` (different rates at different times)
    - `RealData` (emulates behavior of a real user in our dataset)
+   - `SmartPoisson` (Smarter than random posting)
    - `RedQueen` (our proposed algorithm)
 
  - `utils.py` contains common utility functions for metric calculation and plotting.
@@ -89,7 +93,7 @@ manager = simOpts.create_manager_with_opt(seed=101)
 manager = simOpts.create_manager_for_wall()
 ```
 
-Finally, run the simulation by calling the method `run_dynamic`:
+Finally, run the simulation by calling `.run_dynamic`:
 
 ```python
 manager.run_dynamic()
@@ -106,7 +110,7 @@ The file `utils.py` contains some functions which can assist in calculation of
 performance metrics:
 
 ```python
-import utils as U
+# import redqueen.utils as U
 perf_1 = U.time_in_top_k(df=df, K=1, sim_opts=simOpts)
 perf_2 = U.average_rank(df=df, sim_opts=simOpts)
 ```
