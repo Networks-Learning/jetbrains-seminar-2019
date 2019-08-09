@@ -1,7 +1,6 @@
-# Dynamic Social Network Analysis Course
+#  JetBrains seminar on Jelearning with temporal point process
 
-This is the material for the course about machine learning for dynamic
-social network analysis 2019.
+This is the material for the JetBrains seminar on Jelearning with temporal point process, 2019.
 
 ## Requirements
 
