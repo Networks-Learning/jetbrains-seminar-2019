@@ -25,8 +25,6 @@ You will need to implement some functions in the file `opt_model.py`.
  - `utils.py` contains common utility functions for metric calculation and plotting.
  - `opt_runs.py` contains functions to execute the simulations.
 
- - `real_data_gen.py` and `read_real_data.py` files deal with conversion of real Twitter data to and from formats helpful for our models.
-
 
 ## Execution
 
